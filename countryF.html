@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select id="Contient_Select">
+        <option value="India">India</option>
+        <option value="USA">USA</option>
+        <option value="China">China</option>
+        <option value="Nepal">Nepal</option>
+        <option value="Pakistan">Pakistan</option>
+        <option value="Brazil">Brazil</option>
+        <option value="Bhutan">Bhutan</option>
+        <option value="Swazirland">Swzirland</option>
+        <option value="Shrilanka">Shirlanka</option>
+        <option value="England"England></option>
+        <option value="Austrilia">Austrilia</option>
+        <option value="Afganstan">Afganstan</option>
+        <option value="Bangladesh">Bangladesh</option>
+        <option value="Japan">Japan</option>
+        <option value="Mexico">Mexico</option>
+        
+    </select>
+    <button>Find Contient</button>
+</body>
+</html>
+<script>
+    document.querySelector("button").addEventListener("click",addFunction);
+    function addFunction() {
+     var country = document.querySelector("#Contient_Select").value;
+     console.log(country); 
+     switch(country){
+        case "india":
+        case "Nepal":
+        case "China":
+        alert("asia");
+        break;
+        case "USA":
+        case "japan":
+        alert("The country is contient");
+        break;
+     }
+    }
+</script>
